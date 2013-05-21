@@ -1,4 +1,12 @@
 AplicaccionSimple::Application.routes.draw do
+  get "paginasestaticas/inicio"
+
+  get "paginasestaticas/ayuda"
+
+  #get "paginasestaticas/home"
+
+  #get "paginasestaticas/help"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
