@@ -3,6 +3,7 @@ AplicaccionSimple::Application.routes.draw do
 
   get "paginasestaticas/ayuda"
 
+  get "paginasestaticas/sobre"
   #get "paginasestaticas/home"
 
   #get "paginasestaticas/help"
