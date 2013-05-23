@@ -1,4 +1,6 @@
 AplicaccionSimple::Application.routes.draw do
+  get "paginasestaticas/contacto"
+
   get "paginasestaticas/inicio"
 
   get "paginasestaticas/ayuda"

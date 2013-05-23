@@ -1,0 +1,1729 @@
+Last login: Tue May 21 12:29:57 on ttys001
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails -v
+Could not find nokogiri-1.5.9 in any of the sources
+Run `bundle install` to install missing gems.
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ ls
+Gemfile		README.rdoc	app		config.ru	doc		log		script		tmp
+Gemfile.lock	Rakefile	config		db		lib		public		spec		vendor
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ vim readme.rdoc
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ vim readme.rdoc
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ vim readme.rdoc
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ git mv README.rdoc README.md
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ git commit -a -m "README Mejorado"
+[master 80d7a1f] README Mejorado
+ 2 files changed, 10 insertions(+), 261 deletions(-)
+ create mode 100644 README.md
+ delete mode 100644 README.rdoc
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ git remote add origin git@github.com:losjod/aplicaccion_simple.git
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ git push -u origin master
+Counting objects: 77, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (60/60), done.
+Writing objects: 100% (77/77), 34.90 KiB, done.
+Total 77 (delta 3), reused 0 (delta 0)
+To git@github.com:losjod/aplicaccion_simple.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ heroku create --stack cedar
+Creating ancient-plateau-8657... done, region is us
+http://ancient-plateau-8657.herokuapp.com/ | git@heroku.com:ancient-plateau-8657.git
+Git remote heroku added
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ git push heroku master
+Counting objects: 77, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (60/60), done.
+Writing objects: 100% (77/77), 34.90 KiB, done.
+Total 77 (delta 3), reused 0 (delta 0)
+
+-----> Ruby/Rails app detected
+-----> Installing dependencies using Bundler version 1.3.2
+       Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin --deployment
+       Fetching gem metadata from https://rubygems.org/..........
+       Fetching gem metadata from https://rubygems.org/..
+       Installing rake (10.0.4)
+       Installing i18n (0.6.1)
+       Installing multi_json (1.7.3)
+       Installing activesupport (3.2.13)
+       Installing builder (3.0.4)
+       Installing activemodel (3.2.13)
+       Installing erubis (2.7.0)
+       Installing journey (1.0.4)
+       Installing rack (1.4.5)
+       Installing rack-cache (1.2)
+       Installing rack-test (0.6.2)
+       Installing hike (1.2.2)
+       Installing tilt (1.4.1)
+       Installing sprockets (2.2.2)
+       Installing actionpack (3.2.13)
+       Installing mime-types (1.23)
+       Installing polyglot (0.3.3)
+       Installing treetop (1.4.12)
+       Installing mail (2.5.4)
+       Installing actionmailer (3.2.13)
+       Installing arel (3.0.2)
+       Installing tzinfo (0.3.37)
+       Installing activerecord (3.2.13)
+       Installing activeresource (3.2.13)
+       Installing coffee-script-source (1.6.2)
+       Installing execjs (1.4.0)
+       Installing coffee-script (2.2.0)
+       Installing rack-ssl (1.3.3)
+       Installing json (1.8.0)
+       Installing rdoc (3.12.2)
+       Installing thor (0.18.1)
+       Installing railties (3.2.13)
+       Installing coffee-rails (3.2.2)
+       Installing jquery-rails (2.0.2)
+       Installing pg (0.12.2)
+       Using bundler (1.3.2)
+       Installing rails (3.2.13)
+       Installing sass (3.2.9)
+       Installing sass-rails (3.2.5)
+       Installing uglifier (1.2.3)
+       Your bundle is complete! It was installed into ./vendor/bundle
+       Post-install message from rdoc:
+       Depending on your version of ruby, you may need to install ruby rdoc/ri data:
+       <= 1.8.6 : unsupported
+       = 1.8.7 : gem install rdoc-data; rdoc-data --install
+       = 1.9.1 : gem install rdoc-data; rdoc-data --install
+       >= 1.9.2 : nothing to do! Yay!
+       Cleaning up the bundler cache.
+-----> Writing config/database.yml to read from DATABASE_URL
+-----> Preparing app for Rails asset pipeline
+       Running: rake assets:precompile
+       Asset precompilation completed (12.46s)
+-----> Rails plugin injection
+       Injecting rails_log_stdout
+       Injecting rails3_serve_static_assets
+-----> Discovering process types
+       Procfile declares types      -> (none)
+       Default types for Ruby/Rails -> console, rake, web, worker
+
+-----> Compiled slug size: 9.4MB
+-----> Launching... done, v6
+       http://ancient-plateau-8657.herokuapp.com deployed to Heroku
+
+To git@heroku.com:ancient-plateau-8657.git
+ * [new branch]      master -> master
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ vim public/hola.html
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ vim public/hola.html
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails s
+Could not find nokogiri-1.5.9 in any of the sources
+Run `bundle install` to install missing gems.
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ pwd
+/Users/RicValdez/desktop/web/proyectos_rails/aplicaccion_simple
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle update
+Fetching gem metadata from https://rubygems.org/.........
+Fetching gem metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake (10.0.4) 
+Using i18n (0.6.1) 
+Using multi_json (1.7.3) 
+Using activesupport (3.2.13) 
+Using builder (3.0.4) 
+Using activemodel (3.2.13) 
+Using erubis (2.7.0) 
+Using journey (1.0.4) 
+Using rack (1.4.5) 
+Using rack-cache (1.2) 
+Using rack-test (0.6.2) 
+Using hike (1.2.2) 
+Using tilt (1.4.1) 
+Using sprockets (2.2.2) 
+Using actionpack (3.2.13) 
+Using mime-types (1.23) 
+Using polyglot (0.3.3) 
+Using treetop (1.4.12) 
+Using mail (2.5.4) 
+Using actionmailer (3.2.13) 
+Using arel (3.0.2) 
+Using tzinfo (0.3.37) 
+Using activerecord (3.2.13) 
+Using activeresource (3.2.13) 
+Using bundler (1.3.5) 
+Installing nokogiri (1.5.9) 
+Installing ffi (1.8.1) 
+Installing childprocess (0.3.9) 
+Installing rubyzip (0.9.9) 
+Installing websocket (1.0.7) 
+Installing selenium-webdriver (2.32.1) 
+Installing xpath (0.1.4) 
+Installing capybara (1.1.2) 
+Using coffee-script-source (1.6.2) 
+Using execjs (1.4.0) 
+Using coffee-script (2.2.0) 
+Using rack-ssl (1.3.3) 
+Using json (1.8.0) 
+Using rdoc (3.12.2) 
+Using thor (0.18.1) 
+Using railties (3.2.13) 
+Using coffee-rails (3.2.2) 
+Installing diff-lcs (1.1.3) 
+Installing jquery-rails (2.0.2) 
+Using rails (3.2.13) 
+Installing rspec-core (2.11.1) 
+Installing rspec-expectations (2.11.3) 
+Installing rspec-mocks (2.11.3) 
+Installing rspec (2.11.0) 
+Installing rspec-rails (2.11.0) 
+Using sass (3.2.9) 
+Installing sass-rails (3.2.5) 
+Installing sqlite3 (1.3.5) 
+Installing uglifier (1.2.3) 
+Your bundle is updated!
+Gems in the group production were not installed.
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle install
+Using rake (10.0.4) 
+Using i18n (0.6.1) 
+Using multi_json (1.7.3) 
+Using activesupport (3.2.13) 
+Using builder (3.0.4) 
+Using activemodel (3.2.13) 
+Using erubis (2.7.0) 
+Using journey (1.0.4) 
+Using rack (1.4.5) 
+Using rack-cache (1.2) 
+Using rack-test (0.6.2) 
+Using hike (1.2.2) 
+Using tilt (1.4.1) 
+Using sprockets (2.2.2) 
+Using actionpack (3.2.13) 
+Using mime-types (1.23) 
+Using polyglot (0.3.3) 
+Using treetop (1.4.12) 
+Using mail (2.5.4) 
+Using actionmailer (3.2.13) 
+Using arel (3.0.2) 
+Using tzinfo (0.3.37) 
+Using activerecord (3.2.13) 
+Using activeresource (3.2.13) 
+Using nokogiri (1.5.9) 
+Using ffi (1.8.1) 
+Using childprocess (0.3.9) 
+Using rubyzip (0.9.9) 
+Using websocket (1.0.7) 
+Using selenium-webdriver (2.32.1) 
+Using xpath (0.1.4) 
+Using capybara (1.1.2) 
+Using coffee-script-source (1.6.2) 
+Using execjs (1.4.0) 
+Using coffee-script (2.2.0) 
+Using rack-ssl (1.3.3) 
+Using json (1.8.0) 
+Using rdoc (3.12.2) 
+Using thor (0.18.1) 
+Using railties (3.2.13) 
+Using coffee-rails (3.2.2) 
+Using diff-lcs (1.1.3) 
+Using jquery-rails (2.0.2) 
+Using bundler (1.3.5) 
+Using rails (3.2.13) 
+Using rspec-core (2.11.1) 
+Using rspec-expectations (2.11.3) 
+Using rspec-mocks (2.11.3) 
+Using rspec (2.11.0) 
+Using rspec-rails (2.11.0) 
+Using sass (3.2.9) 
+Using sass-rails (3.2.5) 
+Using sqlite3 (1.3.5) 
+Using uglifier (1.2.3) 
+Your bundle is complete!
+Gems in the group production were not installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails s
+=> Booting WEBrick
+=> Rails 3.2.13 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2013-05-21 15:06:02] INFO  WEBrick 1.3.1
+[2013-05-21 15:06:02] INFO  ruby 1.9.3 (2013-05-15) [x86_64-darwin12.2.0]
+[2013-05-21 15:06:02] INFO  WEBrick::HTTPServer#start: pid=9206 port=3000
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-21 15:06:21 -0600
+Served asset /rails.png - 304 Not Modified (22ms)
+[2013-05-21 15:06:21] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-05-21 15:06:25] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-21 15:06:25 -0600
+Served asset /rails.png - 304 Not Modified (0ms)
+[2013-05-21 15:06:25] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/hola-html" for 127.0.0.1 at 2013-05-21 15:06:31 -0600
+
+ActionController::RoutingError (No route matches [GET] "/hola-html"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/RicValdez/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/RicValdez/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/RicValdez/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.6ms)
+^C[2013-05-21 15:07:21] INFO  going to shutdown ...
+[2013-05-21 15:07:21] INFO  WEBrick::HTTPServer#start done.
+Exiting
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rm public/hola.html
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ git checkout -b static-pages
+M	.idea/workspace.xml
+Switched to a new branch 'static-pages'
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails generate rspec:install
+   identical  .rspec
+       exist  spec
+   identical  spec/spec_helper.rb
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails generate controller Paginasestaticas home help --no-test-framework
+      create  app/controllers/paginasestaticas_controller.rb
+       route  get "paginasestaticas/help"
+       route  get "paginasestaticas/home"
+      invoke  erb
+      create    app/views/paginasestaticas
+      create    app/views/paginasestaticas/home.html.erb
+      create    app/views/paginasestaticas/help.html.erb
+      invoke  helper
+      create    app/helpers/paginasestaticas_helper.rb
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/paginasestaticas.js.coffee
+      invoke    scss
+      create      app/assets/stylesheets/paginasestaticas.css.scss
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails generate controller static_pages
+      create  app/controllers/static_pages_controller.rb
+      invoke  erb
+      create    app/views/static_pages
+      invoke  rspec
+      create    spec/controllers/static_pages_controller_spec.rb
+      invoke  helper
+      create    app/helpers/static_pages_helper.rb
+      invoke    rspec
+      create      spec/helpers/static_pages_helper_spec.rb
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/static_pages.js.coffee
+      invoke    scss
+      create      app/assets/stylesheets/static_pages.css.scss
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails destroy controller static_pages
+      remove  app/controllers/static_pages_controller.rb
+      invoke  erb
+      remove    app/views/static_pages
+      invoke  rspec
+      remove    spec/controllers/static_pages_controller_spec.rb
+      invoke  helper
+      remove    app/helpers/static_pages_helper.rb
+      invoke    rspec
+      remove      spec/helpers/static_pages_helper_spec.rb
+      invoke  assets
+      invoke    coffee
+      remove      app/assets/javascripts/static_pages.js.coffee
+      invoke    scss
+      remove      app/assets/stylesheets/static_pages.css.scss
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails destroy controller Paginasestaticas
+      remove  app/controllers/paginasestaticas_controller.rb
+      invoke  erb
+      remove    app/views/paginasestaticas
+      invoke  rspec
+      remove    spec/controllers/paginasestaticas_controller_spec.rb
+      invoke  helper
+      remove    app/helpers/paginasestaticas_helper.rb
+      invoke    rspec
+      remove      spec/helpers/paginasestaticas_helper_spec.rb
+      invoke  assets
+      invoke    coffee
+      remove      app/assets/javascripts/paginasestaticas.js.coffee
+      invoke    scss
+      remove      app/assets/stylesheets/paginasestaticas.css.scss
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails generate controller Paginasestaticas inicio ayuda --no-test-framework
+      create  app/controllers/paginasestaticas_controller.rb
+       route  get "paginasestaticas/ayuda"
+       route  get "paginasestaticas/inicio"
+      invoke  erb
+      create    app/views/paginasestaticas
+      create    app/views/paginasestaticas/inicio.html.erb
+      create    app/views/paginasestaticas/ayuda.html.erb
+      invoke  helper
+      create    app/helpers/paginasestaticas_helper.rb
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/paginasestaticas.js.coffee
+      invoke    scss
+      create      app/assets/stylesheets/paginasestaticas.css.scss
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails s
+=> Booting WEBrick
+=> Rails 3.2.13 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2013-05-21 15:23:56] INFO  WEBrick 1.3.1
+[2013-05-21 15:23:56] INFO  ruby 1.9.3 (2013-05-15) [x86_64-darwin12.2.0]
+[2013-05-21 15:23:56] INFO  WEBrick::HTTPServer#start: pid=9243 port=3000
+[2013-05-21 15:24:22] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-21 15:24:22 -0600
+Served asset /rails.png - 304 Not Modified (20ms)
+[2013-05-21 15:24:22] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-05-21 15:24:22] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/paginasestaticas/inicio" for 127.0.0.1 at 2013-05-21 15:24:28 -0600
+Processing by PaginasestaticasController#inicio as HTML
+  Rendered paginasestaticas/inicio.html.erb within layouts/application (2.0ms)
+Compiled paginasestaticas.css  (29ms)  (pid 9243)
+Compiled application.css  (37ms)  (pid 9243)
+Compiled jquery.js  (1ms)  (pid 9243)
+Compiled jquery_ujs.js  (0ms)  (pid 9243)
+Compiled paginasestaticas.js  (239ms)  (pid 9243)
+Compiled application.js  (269ms)  (pid 9243)
+Completed 200 OK in 398ms (Views: 397.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/paginasestaticas.css?body=1" for 127.0.0.1 at 2013-05-21 15:24:28 -0600
+Served asset /paginasestaticas.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-21 15:24:28 -0600
+Served asset /jquery.js - 304 Not Modified (13ms)
+[2013-05-21 15:24:28] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/paginasestaticas.js?body=1" for 127.0.0.1 at 2013-05-21 15:24:28 -0600
+Served asset /paginasestaticas.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-21 15:24:28 -0600
+Served asset /application.css - 304 Not Modified (4ms)
+[2013-05-21 15:24:28] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-21 15:24:28 -0600
+Served asset /application.js - 304 Not Modified (7ms)
+[2013-05-21 15:24:28] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-21 15:24:28 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+[2013-05-21 15:24:28] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+^C[2013-05-21 15:32:14] INFO  going to shutdown ...
+[2013-05-21 15:32:14] INFO  WEBrick::HTTPServer#start done.
+Exiting
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ git add .
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ git commit -m "Añadir un Controlador a Paginasestaticas"
+[static-pages 9cd0050] Añadir un Controlador a Paginasestaticas
+ 9 files changed, 203 insertions(+), 3 deletions(-)
+ create mode 100644 .DS_Store
+ create mode 100644 app/assets/javascripts/paginasestaticas.js.coffee
+ create mode 100644 app/assets/stylesheets/paginasestaticas.css.scss
+ create mode 100644 app/controllers/paginasestaticas_controller.rb
+ create mode 100644 app/helpers/paginasestaticas_helper.rb
+ create mode 100644 app/views/paginasestaticas/ayuda.html.erb
+ create mode 100644 app/views/paginasestaticas/inicio.html.erb
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails generate prueba_integracion paginasestaticas
+Could not find generator prueba_integracion.
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails generate integration_test paginasestaticas
+      invoke  rspec
+      create    spec/requests/paginasestaticas_spec.rb
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+F
+
+Failures:
+
+  1) Paginasestaticas Home page Debe tener el contenido 'Aplicacion Simple'
+     Failure/Error: visit '/static_pages/home'
+     ActionController::RoutingError:
+       No route matches [GET] "/static_pages/home"
+     # ./spec/requests/paginasestaticas_spec.rb:7:in `block (3 levels) in <top (required)>'
+
+Finished in 0.15415 seconds
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:6 # Paginasestaticas Home page Debe tener el contenido 'Aplicacion Simple'
+
+Randomized with seed 50490
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+F
+
+Failures:
+
+  1) Paginasestaticas Home page Debe tener el contenido 'Aplicacion Simple'
+     Failure/Error: visit '/static_pages/home'
+     ActionController::RoutingError:
+       No route matches [GET] "/static_pages/home"
+     # ./spec/requests/paginasestaticas_spec.rb:7:in `block (3 levels) in <top (required)>'
+
+Finished in 0.36167 seconds
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:6 # Paginasestaticas Home page Debe tener el contenido 'Aplicacion Simple'
+
+Randomized with seed 47663
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+F
+
+Failures:
+
+  1) Paginasestaticas GET /paginasestaticas works! (now write some real specs)
+     Failure/Error: get paginasestaticas_index_path
+     NameError:
+       undefined local variable or method `paginasestaticas_index_path' for #<RSpec::Core::ExampleGroup::Nested_1::Nested_1:0x007fe1dec16098>
+     # ./spec/requests/paginasestaticas_spec.rb:12:in `block (3 levels) in <top (required)>'
+
+Finished in 0.0189 seconds
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:10 # Paginasestaticas GET /paginasestaticas works! (now write some real specs)
+
+Randomized with seed 59634
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+F
+
+Failures:
+
+  1) Paginasestaticas Home page Debe tener el contenido 'Paginasestaticas'
+     Failure/Error: visit '/Paginasestaticas/inicio'
+     ActionController::RoutingError:
+       No route matches [GET] "/Paginasestaticas/inicio"
+     # ./spec/requests/paginasestaticas_spec.rb:7:in `block (3 levels) in <top (required)>'
+
+Finished in 0.36391 seconds
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:6 # Paginasestaticas Home page Debe tener el contenido 'Paginasestaticas'
+
+Randomized with seed 36864
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+.
+
+Finished in 0.17129 seconds
+1 example, 0 failures
+
+Randomized with seed 63199
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginaestatica_spec.rb
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `load': cannot load such file -- /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/requests/paginaestatica_spec.rb (LoadError)
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `block in load_spec_files'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `map'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `load_spec_files'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/command_line.rb:22:in `run'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/runner.rb:69:in `run'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/runner.rb:8:in `block in autorun'
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestatica_spec.rb
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `load': cannot load such file -- /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/requests/paginasestatica_spec.rb (LoadError)
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `block in load_spec_files'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `map'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `load_spec_files'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/command_line.rb:22:in `run'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/runner.rb:69:in `run'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/runner.rb:8:in `block in autorun'
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+..
+
+Finished in 0.19321 seconds
+2 examples, 0 failures
+
+Randomized with seed 41721
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+.F.
+
+Failures:
+
+  1) paginasestaticas Sobre la Pagina should have the content 'Sobre Nosotros'
+     Failure/Error: visit '/paginasestaticas/sobre'
+     ActionController::RoutingError:
+       No route matches [GET] "/paginasestaticas/sobre"
+     # ./spec/requests/paginasestaticas_spec.rb:26:in `block (3 levels) in <top (required)>'
+
+Finished in 0.38837 seconds
+3 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:25 # paginasestaticas Sobre la Pagina should have the content 'Sobre Nosotros'
+
+Randomized with seed 33485
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+..F
+
+Failures:
+
+  1) paginasestaticas Sobre la Pagina should have the content 'Sobre Nosotros'
+     Failure/Error: visit '/paginasestaticas/sobre'
+     AbstractController::ActionNotFound:
+       The action 'sobre' could not be found for PaginasestaticasController
+     # ./spec/requests/paginasestaticas_spec.rb:26:in `block (3 levels) in <top (required)>'
+
+Finished in 0.20452 seconds
+3 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:25 # paginasestaticas Sobre la Pagina should have the content 'Sobre Nosotros'
+
+Randomized with seed 55793
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+.F.
+
+Failures:
+
+  1) paginasestaticas Sobre la Pagina should have the content 'Sobre Nosotros'
+     Failure/Error: visit '/paginasestaticas/sobre'
+     ActionView::MissingTemplate:
+       Missing template paginasestaticas/sobre, application/sobre with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+         * "/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/app/views"
+     # ./spec/requests/paginasestaticas_spec.rb:26:in `block (3 levels) in <top (required)>'
+
+Finished in 0.22143 seconds
+3 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:25 # paginasestaticas Sobre la Pagina should have the content 'Sobre Nosotros'
+
+Randomized with seed 61797
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails generate controller paginasestaticas sobre --no-test-framework
+    conflict  app/controllers/paginasestaticas_controller.rb
+Overwrite /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/app/controllers/paginasestaticas_controller.rb? (enter "h" for help) [Ynaqdh] h
+Y - yes, overwrite
+n - no, do not overwrite
+a - all, overwrite this and all others
+q - quit, abort
+d - diff, show the differences between the old and the new
+h - help, show this help
+Overwrite /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/app/controllers/paginasestaticas_controller.rb? (enter "h" for help) [Ynaqdh] y
+       force  app/controllers/paginasestaticas_controller.rb
+       route  get "paginasestaticas/sobre"
+      invoke  erb
+       exist    app/views/paginasestaticas
+      create    app/views/paginasestaticas/sobre.html.erb
+      invoke  helper
+   identical    app/helpers/paginasestaticas_helper.rb
+      invoke  assets
+      invoke    coffee
+   identical      app/assets/javascripts/paginasestaticas.js.coffee
+      invoke    scss
+    conflict      app/assets/stylesheets/paginasestaticas.css.scss
+    Overwrite /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/app/assets/stylesheets/paginasestaticas.css.scss? (enter "h" for help) [Ynaqdh] a
+       force      app/assets/stylesheets/paginasestaticas.css.scss
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+...
+
+Finished in 0.20772 seconds
+3 examples, 0 failures
+
+Randomized with seed 34029
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails s
+=> Booting WEBrick
+=> Rails 3.2.13 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2013-05-21 17:18:13] INFO  WEBrick 1.3.1
+[2013-05-21 17:18:13] INFO  ruby 1.9.3 (2013-05-15) [x86_64-darwin12.2.0]
+[2013-05-21 17:18:13] INFO  WEBrick::HTTPServer#start: pid=10236 port=3000
+
+
+Started GET "/paginasestaticas/inicio" for 127.0.0.1 at 2013-05-21 17:18:25 -0600
+Processing by PaginasestaticasController#inicio as HTML
+  Rendered paginasestaticas/inicio.html.erb within layouts/application (2.1ms)
+Compiled paginasestaticas.css  (35ms)  (pid 10236)
+Compiled application.css  (1ms)  (pid 10236)
+Completed 200 OK in 227ms (Views: 226.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-21 17:18:26 -0600
+Served asset /application.css - 304 Not Modified (4ms)
+[2013-05-21 17:18:26] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-21 17:18:26 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+[2013-05-21 17:18:26] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-21 17:18:26 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+[2013-05-21 17:18:26] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/paginasestaticas.css?body=1" for 127.0.0.1 at 2013-05-21 17:18:26 -0600
+Served asset /paginasestaticas.css - 304 Not Modified (2ms)
+[2013-05-21 17:18:26] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/paginasestaticas.js?body=1" for 127.0.0.1 at 2013-05-21 17:18:26 -0600
+Served asset /paginasestaticas.js - 304 Not Modified (1ms)
+[2013-05-21 17:18:26] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-21 17:18:26 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+[2013-05-21 17:18:26] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-05-21 17:18:26] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/paginasestaticas/sobre" for 127.0.0.1 at 2013-05-21 17:18:38 -0600
+Processing by PaginasestaticasController#sobre as HTML
+  Rendered paginasestaticas/sobre.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/paginasestaticas.css?body=1" for 127.0.0.1 at 2013-05-21 17:18:38 -0600
+Served asset /paginasestaticas.css - 304 Not Modified (0ms)
+[2013-05-21 17:18:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-21 17:18:38 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+[2013-05-21 17:18:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-21 17:18:38 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[2013-05-21 17:18:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-21 17:18:38 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+[2013-05-21 17:18:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-21 17:18:38 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+[2013-05-21 17:18:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/paginasestaticas.js?body=1" for 127.0.0.1 at 2013-05-21 17:18:38 -0600
+Served asset /paginasestaticas.js - 304 Not Modified (0ms)
+[2013-05-21 17:18:38] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/paginasestaticas/ayuda" for 127.0.0.1 at 2013-05-21 17:18:44 -0600
+Processing by PaginasestaticasController#ayuda as HTML
+  Rendered paginasestaticas/ayuda.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-21 17:18:44 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+[2013-05-21 17:18:44] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/paginasestaticas.js?body=1" for 127.0.0.1 at 2013-05-21 17:18:44 -0600
+Served asset /paginasestaticas.js - 304 Not Modified (0ms)
+[2013-05-21 17:18:44] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-21 17:18:44 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+[2013-05-21 17:18:44] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-21 17:18:44 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+[2013-05-21 17:18:44] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-21 17:18:44 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[2013-05-21 17:18:44] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/paginasestaticas.css?body=1" for 127.0.0.1 at 2013-05-21 17:18:44 -0600
+Served asset /paginasestaticas.css - 304 Not Modified (0ms)
+[2013-05-21 17:18:44] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+^C[2013-05-21 17:32:02] INFO  going to shutdown ...
+[2013-05-21 17:32:02] INFO  WEBrick::HTTPServer#start done.
+Exiting
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ mv app/views/layouts/application.html.erb foobar
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+......
+
+Finished in 0.21625 seconds
+6 examples, 0 failures
+
+Randomized with seed 48444
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+.........
+
+Finished in 0.22191 seconds
+9 examples, 0 failures
+
+Randomized with seed 18476
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$  mv foobar app/views/layouts/application.html.erb
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$  mv foobar app/views/layouts/application.html.erb
+mv: foobar: No such file or directory
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+
+..F..F..
+
+Failures:
+
+  1) paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+     Failure/Error: page.should have_selector('title',
+       expected css "title" with text "Tecnologias Web  | Inicio" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:20:in `block (3 levels) in <top (required)>'
+
+  2) paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+     Failure/Error: page.should have_selector('title',
+       expected css "title" with text "Tecnologias Web  | Ayuda" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:39:in `block (3 levels) in <top (required)>'
+
+Finished in 0.20997 seconds
+8 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:18 # paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+rspec ./spec/requests/paginasestaticas_spec.rb:37 # paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+
+Randomized with seed 47345
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ 
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+......
+
+Finished in 0.22199 seconds
+6 examples, 0 failures
+
+Randomized with seed 35527
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ git add .
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ git commit -m "Terminado Paginas Estaticas"
+[static-pages 64d0f18] Terminado Paginas Estaticas
+ 9 files changed, 270 insertions(+), 40 deletions(-)
+ create mode 100644 app/views/paginasestaticas/sobre.html.erb
+ create mode 100644 spec/requests/paginasestaticas_spec.rb
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ git checkout master
+Switched to branch 'master'
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ git merge static-pages
+Updating 80d7a1f..64d0f18
+Fast-forward
+ .DS_Store                                         | Bin 0 -> 6148 bytes
+ .idea/workspace.xml                               | 322 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---
+ app/assets/javascripts/paginasestaticas.js.coffee |   3 ++
+ app/assets/stylesheets/paginasestaticas.css.scss  |   3 ++
+ app/controllers/paginasestaticas_controller.rb    |  12 +++++
+ app/helpers/paginasestaticas_helper.rb            |   2 +
+ app/views/layouts/application.html.erb            |   2 +-
+ app/views/paginasestaticas/ayuda.html.erb         |  10 ++++
+ app/views/paginasestaticas/inicio.html.erb        |   9 ++++
+ app/views/paginasestaticas/sobre.html.erb         |  13 +++++
+ config/routes.rb                                  |   9 ++++
+ spec/requests/paginasestaticas_spec.rb            |  63 ++++++++++++++++++++++++
+ 12 files changed, 439 insertions(+), 9 deletions(-)
+ create mode 100644 .DS_Store
+ create mode 100644 app/assets/javascripts/paginasestaticas.js.coffee
+ create mode 100644 app/assets/stylesheets/paginasestaticas.css.scss
+ create mode 100644 app/controllers/paginasestaticas_controller.rb
+ create mode 100644 app/helpers/paginasestaticas_helper.rb
+ create mode 100644 app/views/paginasestaticas/ayuda.html.erb
+ create mode 100644 app/views/paginasestaticas/inicio.html.erb
+ create mode 100644 app/views/paginasestaticas/sobre.html.erb
+ create mode 100644 spec/requests/paginasestaticas_spec.rb
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 58, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (41/41), done.
+Writing objects: 100% (43/43), 6.53 KiB, done.
+Total 43 (delta 15), reused 0 (delta 0)
+To git@github.com:losjod/aplicaccion_simple.git
+   80d7a1f..64d0f18  master -> master
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ git puch heroku
+git: 'puch' is not a git command. See 'git --help'.
+
+Did you mean this?
+	push
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ git push heroku
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 58, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (41/41), done.
+Writing objects: 100% (43/43), 6.53 KiB, done.
+Total 43 (delta 15), reused 0 (delta 0)
+
+-----> Removing .DS_Store files
+-----> Ruby/Rails app detected
+-----> Installing dependencies using Bundler version 1.3.2
+       Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin --deployment
+       Using rake (10.0.4)
+       Using i18n (0.6.1)
+       Using multi_json (1.7.3)
+       Using activesupport (3.2.13)
+       Using builder (3.0.4)
+       Using activemodel (3.2.13)
+       Using erubis (2.7.0)
+       Using journey (1.0.4)
+       Using rack (1.4.5)
+       Using rack-cache (1.2)
+       Using rack-test (0.6.2)
+       Using hike (1.2.2)
+       Using tilt (1.4.1)
+       Using sprockets (2.2.2)
+       Using actionpack (3.2.13)
+       Using mime-types (1.23)
+       Using polyglot (0.3.3)
+       Using treetop (1.4.12)
+       Using mail (2.5.4)
+       Using actionmailer (3.2.13)
+       Using arel (3.0.2)
+       Using tzinfo (0.3.37)
+       Using activerecord (3.2.13)
+       Using activeresource (3.2.13)
+       Using coffee-script-source (1.6.2)
+       Using execjs (1.4.0)
+       Using coffee-script (2.2.0)
+       Using rack-ssl (1.3.3)
+       Using json (1.8.0)
+       Using rdoc (3.12.2)
+       Using thor (0.18.1)
+       Using railties (3.2.13)
+       Using coffee-rails (3.2.2)
+       Using jquery-rails (2.0.2)
+       Using pg (0.12.2)
+       Using bundler (1.3.2)
+       Using rails (3.2.13)
+       Using sass (3.2.9)
+       Using sass-rails (3.2.5)
+       Using uglifier (1.2.3)
+       Your bundle is complete! It was installed into ./vendor/bundle
+       Cleaning up the bundler cache.
+-----> Writing config/database.yml to read from DATABASE_URL
+-----> Preparing app for Rails asset pipeline
+       Running: rake assets:precompile
+       Asset precompilation completed (12.72s)
+-----> Rails plugin injection
+       Injecting rails_log_stdout
+       Injecting rails3_serve_static_assets
+-----> Discovering process types
+       Procfile declares types      -> (none)
+       Default types for Ruby/Rails -> console, rake, web, worker
+
+-----> Compiled slug size: 9.4MB
+-----> Launching... done, v7
+       http://ancient-plateau-8657.herokuapp.com deployed to Heroku
+
+To git@heroku.com:ancient-plateau-8657.git
+   80d7a1f..64d0f18  master -> master
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rvm get head && rvm reload
+######################################################################## 100.0%
+Downloading RVM from wayneeseguin branch master
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   124  100   124    0     0    173      0 --:--:-- --:--:-- --:--:--   251
+100 1066k  100 1066k    0     0   194k      0  0:00:05  0:00:05 --:--:--  280k
+
+Upgrading the RVM installation in /Users/RicValdez/.rvm/
+    Can not automatically remove lines with 'rvm_autolibs_flag=' from '/etc/rvmrc', please clean it manually.
+    RVM PATH line found in /Users/RicValdez/.bashrc /Users/RicValdez/.zshrc.
+    RVM sourcing line found in /Users/RicValdez/.bash_profile /Users/RicValdez/.zprofile.
+
+Upgrade Notes:
+
+
+  * WARNING: you have 'rvm_configure_env' in /etc/rvmrc, run the following to fix:
+
+      sudo sed -i'' -e "/rvm_configure_env=.*\/opt\/sm/d" /etc/rvmrc
+      rvm autolibs smf
+
+  * No new notes to display.
+
+# RVM:  Shell scripts enabling management of multiple ruby environments.
+# RTFM: https://rvm.io/
+# HELP: http://webchat.freenode.net/?channels=rvm (#rvm on irc.freenode.net)
+# Cheatsheet: http://cheat.errtheblog.com/s/rvm
+# Screencast: http://screencasts.org/episodes/how-to-use-rvm
+
+# In case of any issues run 'rvm requirements' or read 'rvm notes'
+
+Upgrade of RVM in /Users/RicValdez/.rvm/ is complete.
+
+# ric,
+#
+#   Thank you for using RVM!
+#   I sincerely hope that RVM helps to make your life easier and
+#   more enjoyable!!!
+#
+# ~Wayne
+
+
+RVM reloaded!
+RVM reloaded!
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rvm -v
+
+rvm 1.20.10 (master) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rspec spec/
+WARNING: Nokogiri was built against LibXML version 2.9.0, but has dynamically loaded 2.7.8
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429@global/gems/bundler-1.3.5/lib/bundler/rubygems_integration.rb:214:in `block in replace_gem': Please install the sqlite3 adapter: `gem install activerecord-sqlite3-adapter` (sqlite3 is not part of the bundle. Add it to Gemfile.) (LoadError)
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activerecord-3.2.13/lib/active_record/connection_adapters/sqlite3_adapter.rb:3:in `<top (required)>'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `block in require'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_specification.rb:50:in `resolve_hash_connection'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_specification.rb:41:in `resolve_string_connection'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_specification.rb:25:in `spec'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_specification.rb:130:in `establish_connection'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activerecord-3.2.13/lib/active_record/railtie.rb:82:in `block (2 levels) in <class:Railtie>'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/lazy_load_hooks.rb:36:in `instance_eval'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/lazy_load_hooks.rb:36:in `execute_hook'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/lazy_load_hooks.rb:43:in `block in run_load_hooks'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/lazy_load_hooks.rb:42:in `each'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/lazy_load_hooks.rb:42:in `run_load_hooks'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activerecord-3.2.13/lib/active_record/base.rb:720:in `<top (required)>'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-rails-2.11.0/lib/rspec/rails/extensions/active_record/base.rb:19:in `<module:Extensions>'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-rails-2.11.0/lib/rspec/rails/extensions/active_record/base.rb:4:in `<module:Rails>'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-rails-2.11.0/lib/rspec/rails/extensions/active_record/base.rb:2:in `<module:RSpec>'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-rails-2.11.0/lib/rspec/rails/extensions/active_record/base.rb:1:in `<top (required)>'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `block in require'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-rails-2.11.0/lib/rspec/rails/extensions.rb:1:in `<top (required)>'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `block in require'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-rails-2.11.0/lib/rspec/rails.rb:8:in `<top (required)>'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `block in require'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+	from /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/spec_helper.rb:4:in `<top (required)>'
+	from /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/requests/paginasestaticas_spec.rb:1:in `require'
+	from /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/requests/paginasestaticas_spec.rb:1:in `<top (required)>'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `load'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `block in load_spec_files'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `map'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `load_spec_files'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/command_line.rb:22:in `run'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/runner.rb:69:in `run'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/runner.rb:8:in `block in autorun'
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rvm get head && rvm reload
+######################################################################## 100.0%
+Downloading RVM from wayneeseguin branch master
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   124  100   124    0     0    119      0  0:00:01  0:00:01 --:--:--   252
+100 1066k  100 1066k    0     0   194k      0  0:00:05  0:00:05 --:--:--  252k
+
+Upgrading the RVM installation in /Users/RicValdez/.rvm/
+    Can not automatically remove lines with 'rvm_autolibs_flag=' from '/etc/rvmrc', please clean it manually.
+    RVM PATH line found in /Users/RicValdez/.bashrc /Users/RicValdez/.zshrc.
+    RVM sourcing line found in /Users/RicValdez/.bash_profile /Users/RicValdez/.zprofile.
+
+Upgrade Notes:
+
+
+  * WARNING: you have 'rvm_configure_env' in /etc/rvmrc, run the following to fix:
+
+      sudo sed -i'' -e "/rvm_configure_env=.*\/opt\/sm/d" /etc/rvmrc
+      rvm autolibs smf
+
+  * No new notes to display.
+
+# RVM:  Shell scripts enabling management of multiple ruby environments.
+# RTFM: https://rvm.io/
+# HELP: http://webchat.freenode.net/?channels=rvm (#rvm on irc.freenode.net)
+# Cheatsheet: http://cheat.errtheblog.com/s/rvm
+# Screencast: http://screencasts.org/episodes/how-to-use-rvm
+
+# In case of any issues run 'rvm requirements' or read 'rvm notes'
+
+Upgrade of RVM in /Users/RicValdez/.rvm/ is complete.
+
+# ric,
+#
+#   Thank you for using RVM!
+#   I sincerely hope that RVM helps to make your life easier and
+#   more enjoyable!!!
+#
+# ~Wayne
+
+
+RVM reloaded!
+RVM reloaded!
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rvm -v
+
+rvm 1.20.10 (master) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ chmod +x $rvm_path/hooks/after_cd_bundler
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle install --without production --binstubs=./bundler_stubs
+Using rake (10.0.4) 
+Using i18n (0.6.1) 
+Using multi_json (1.7.3) 
+Using activesupport (3.2.13) 
+Using builder (3.0.4) 
+Using activemodel (3.2.13) 
+Using erubis (2.7.0) 
+Using journey (1.0.4) 
+Using rack (1.4.5) 
+Using rack-cache (1.2) 
+Using rack-test (0.6.2) 
+Using hike (1.2.2) 
+Using tilt (1.4.1) 
+Using sprockets (2.2.2) 
+Using actionpack (3.2.13) 
+Using mime-types (1.23) 
+Using polyglot (0.3.3) 
+Using treetop (1.4.12) 
+Using mail (2.5.4) 
+Using actionmailer (3.2.13) 
+Using arel (3.0.2) 
+Using tzinfo (0.3.37) 
+Using activerecord (3.2.13) 
+Using activeresource (3.2.13) 
+Using nokogiri (1.5.9) 
+Using ffi (1.8.1) 
+Using childprocess (0.3.9) 
+Using rubyzip (0.9.9) 
+Using websocket (1.0.7) 
+Using selenium-webdriver (2.32.1) 
+Using xpath (0.1.4) 
+Using capybara (1.1.2) 
+Using coffee-script-source (1.6.2) 
+Using execjs (1.4.0) 
+Using coffee-script (2.2.0) 
+Using rack-ssl (1.3.3) 
+Using json (1.8.0) 
+Using rdoc (3.12.2) 
+Using thor (0.18.1) 
+Using railties (3.2.13) 
+Using coffee-rails (3.2.2) 
+Using diff-lcs (1.1.3) 
+Using jquery-rails (2.0.2) 
+Using pg (0.12.2) 
+Using bundler (1.3.5) 
+Using rails (3.2.13) 
+Using rspec-core (2.11.1) 
+Using rspec-expectations (2.11.3) 
+Using rspec-mocks (2.11.3) 
+Using rspec (2.11.0) 
+Using rspec-rails (2.11.0) 
+Using sass (3.2.9) 
+Using sass-rails (3.2.5) 
+Using uglifier (1.2.3) 
+Your bundle is complete!
+Gems in the group production were not installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle install --binstubs=./bundler_stubs
+Using rake (10.0.4) 
+Using i18n (0.6.1) 
+Using multi_json (1.7.3) 
+Using activesupport (3.2.13) 
+Using builder (3.0.4) 
+Using activemodel (3.2.13) 
+Using erubis (2.7.0) 
+Using journey (1.0.4) 
+Using rack (1.4.5) 
+Using rack-cache (1.2) 
+Using rack-test (0.6.2) 
+Using hike (1.2.2) 
+Using tilt (1.4.1) 
+Using sprockets (2.2.2) 
+Using actionpack (3.2.13) 
+Using mime-types (1.23) 
+Using polyglot (0.3.3) 
+Using treetop (1.4.12) 
+Using mail (2.5.4) 
+Using actionmailer (3.2.13) 
+Using arel (3.0.2) 
+Using tzinfo (0.3.37) 
+Using activerecord (3.2.13) 
+Using activeresource (3.2.13) 
+Using nokogiri (1.5.9) 
+Using ffi (1.8.1) 
+Using childprocess (0.3.9) 
+Using rubyzip (0.9.9) 
+Using websocket (1.0.7) 
+Using selenium-webdriver (2.32.1) 
+Using xpath (0.1.4) 
+Using capybara (1.1.2) 
+Using coffee-script-source (1.6.2) 
+Using execjs (1.4.0) 
+Using coffee-script (2.2.0) 
+Using rack-ssl (1.3.3) 
+Using json (1.8.0) 
+Using rdoc (3.12.2) 
+Using thor (0.18.1) 
+Using railties (3.2.13) 
+Using coffee-rails (3.2.2) 
+Using diff-lcs (1.1.3) 
+Using jquery-rails (2.0.2) 
+Using pg (0.12.2) 
+Using bundler (1.3.5) 
+Using rails (3.2.13) 
+Using rspec-core (2.11.1) 
+Using rspec-expectations (2.11.3) 
+Using rspec-mocks (2.11.3) 
+Using rspec (2.11.0) 
+Using rspec-rails (2.11.0) 
+Using sass (3.2.9) 
+Using sass-rails (3.2.5) 
+Using uglifier (1.2.3) 
+Your bundle is complete!
+Gems in the group production were not installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bin/rake db:migrate
+-bash: bin/rake: No such file or directory
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle install
+Fetching gem metadata from https://rubygems.org/.........
+Fetching gem metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake (10.0.4) 
+Using i18n (0.6.1) 
+Using multi_json (1.7.3) 
+Using activesupport (3.2.13) 
+Using builder (3.0.4) 
+Using activemodel (3.2.13) 
+Using erubis (2.7.0) 
+Using journey (1.0.4) 
+Using rack (1.4.5) 
+Using rack-cache (1.2) 
+Using rack-test (0.6.2) 
+Using hike (1.2.2) 
+Using tilt (1.4.1) 
+Using sprockets (2.2.2) 
+Using actionpack (3.2.13) 
+Using mime-types (1.23) 
+Using polyglot (0.3.3) 
+Using treetop (1.4.12) 
+Using mail (2.5.4) 
+Using actionmailer (3.2.13) 
+Using arel (3.0.2) 
+Using tzinfo (0.3.37) 
+Using activerecord (3.2.13) 
+Using activeresource (3.2.13) 
+Using bundler (1.3.5) 
+Using nokogiri (1.5.9) 
+Using ffi (1.8.1) 
+Using childprocess (0.3.9) 
+Using rubyzip (0.9.9) 
+Using websocket (1.0.7) 
+Using selenium-webdriver (2.32.1) 
+Using xpath (0.1.4) 
+Using capybara (1.1.2) 
+Installing coderay (1.0.9) 
+Using coffee-script-source (1.6.2) 
+Using execjs (1.4.0) 
+Using coffee-script (2.2.0) 
+Using rack-ssl (1.3.3) 
+Using json (1.8.0) 
+Using rdoc (3.12.2) 
+Using thor (0.18.1) 
+Using railties (3.2.13) 
+Using coffee-rails (3.2.2) 
+Using diff-lcs (1.1.3) 
+Installing formatador (0.2.4) 
+Installing growl (1.0.3) 
+Installing listen (0.7.3) 
+Installing lumberjack (1.0.3) 
+Installing method_source (0.8.1) 
+Installing slop (3.4.5) 
+Installing pry (0.9.12.2) 
+Installing guard (1.7.0) 
+Installing guard-rspec (1.2.1) 
+Using jquery-rails (2.0.2) 
+Using rails (3.2.13) 
+Installing rb-fsevent (0.9.1) 
+Using rspec-core (2.11.1) 
+Using rspec-expectations (2.11.3) 
+Using rspec-mocks (2.11.3) 
+Using rspec (2.11.0) 
+Using rspec-rails (2.11.0) 
+Using sass (3.2.9) 
+Using sass-rails (3.2.5) 
+Using sqlite3 (1.3.5) 
+Using uglifier (1.2.3) 
+Your bundle is complete!
+Gems in the group production were not installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec guard init rspec
+21:28:22 - INFO - Writing new Guardfile to /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/Guardfile
+21:28:22 - INFO - rspec guard added to Guardfile, feel free to edit it
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ guard 'rspec', :version => 2, :all_after_pass => false do
+Could not find command "rspec,".
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec guard
+21:54:34 - INFO - Guard uses TerminalTitle to send notifications.
+21:54:34 - INFO - Guard::RSpec is running, with RSpec 2!
+21:54:34 - INFO - Running all specs
+........
+
+Finished in 0.34566 seconds
+8 examples, 0 failures
+
+
+Randomized with seed 27310
+
+21:54:39 - INFO - Guard is now watching at '/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple'
+[Listen warning]:
+  Listen will be polling changes. Learn more at https://github.com/guard/listen#polling-fallback.
+
+[1] guard(main)> mkdir spec/routing
+NameError: undefined local variable or method `spec' for main:Object
+from (pry):1:in `__pry__'
+[2] guard(main)> spec/routing
+NameError: undefined local variable or method `spec' for main:Object
+from (pry):2:in `__pry__'
+[3] guard(main)> spec/routing
+NameError: undefined local variable or method `spec' for main:Object
+from (pry):3:in `__pry__'
+[4] guard(main)> exit
+21:57:10 - INFO - Bye bye...
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec guard
+21:57:16 - INFO - Guard uses TerminalTitle to send notifications.
+21:57:16 - INFO - Guard::RSpec is running, with RSpec 2!
+21:57:16 - INFO - Running all specs
+........
+
+Finished in 0.25973 seconds
+8 examples, 0 failures
+
+
+Randomized with seed 52257
+
+21:57:20 - INFO - Guard is now watching at '/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple'
+[Listen warning]:
+  Listen will be polling changes. Learn more at https://github.com/guard/listen#polling-fallback.
+
+[1] guard(main)> spec/routing
+NameError: undefined local variable or method `spec' for main:Object
+from (pry):1:in `__pry__'
+[1] guard(main)> bundle install
+NameError: undefined local variable or method `install' for main:Object
+from (pry):2:in `__pry__'
+[2] guard(main)> exit
+22:13:42 - INFO - Bye bye...
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle install
+Fetching gem metadata from https://rubygems.org/.........
+Fetching gem metadata from https://rubygems.org/..
+Resolving dependencies...
+You have requested:
+  childprocess = 0.3.6
+
+The bundle currently has childprocess locked at 0.3.9.
+Try running `bundle update childprocess`
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle install
+Fetching gem metadata from https://rubygems.org/..........
+Fetching gem metadata from https://rubygems.org/..
+Resolving dependencies...
+You have requested:
+  childprocess = 0.3.6
+
+The bundle currently has childprocess locked at 0.3.9.
+Try running `bundle update childprocess`
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle update
+Fetching gem metadata from https://rubygems.org/..........
+Fetching gem metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake (10.0.4) 
+Using i18n (0.6.1) 
+Using multi_json (1.7.3) 
+Using activesupport (3.2.13) 
+Using builder (3.0.4) 
+Using activemodel (3.2.13) 
+Using erubis (2.7.0) 
+Using journey (1.0.4) 
+Using rack (1.4.5) 
+Using rack-cache (1.2) 
+Using rack-test (0.6.2) 
+Using hike (1.2.2) 
+Using tilt (1.4.1) 
+Using sprockets (2.2.2) 
+Using actionpack (3.2.13) 
+Using mime-types (1.23) 
+Using polyglot (0.3.3) 
+Using treetop (1.4.12) 
+Using mail (2.5.4) 
+Using actionmailer (3.2.13) 
+Using arel (3.0.2) 
+Using tzinfo (0.3.37) 
+Using activerecord (3.2.13) 
+Using activeresource (3.2.13) 
+Using bundler (1.3.5) 
+Using nokogiri (1.5.9) 
+Using ffi (1.8.1) 
+Installing childprocess (0.3.6) 
+Using rubyzip (0.9.9) 
+Using websocket (1.0.7) 
+Using selenium-webdriver (2.32.1) 
+Using xpath (0.1.4) 
+Using capybara (1.1.2) 
+Using coderay (1.0.9) 
+Using coffee-script-source (1.6.2) 
+Using execjs (1.4.0) 
+Using coffee-script (2.2.0) 
+Using rack-ssl (1.3.3) 
+Using json (1.8.0) 
+Using rdoc (3.12.2) 
+Using thor (0.18.1) 
+Using railties (3.2.13) 
+Using coffee-rails (3.2.2) 
+Using formatador (0.2.4) 
+Using growl (1.0.3) 
+Using listen (0.7.3) 
+Using lumberjack (1.0.3) 
+Using method_source (0.8.1) 
+Using slop (3.4.5) 
+Using pry (0.9.12.2) 
+Using guard (1.7.0) 
+Installing spork (0.9.2) 
+Installing sys-proctable (0.9.3) 
+Installing guard-spork (1.2.0) 
+Using jquery-rails (2.0.2) 
+Using rails (3.2.13) 
+Using rb-fsevent (0.9.1) 
+Using sass (3.2.9) 
+Using sass-rails (3.2.5) 
+Using uglifier (1.2.3) 
+Your bundle is updated!
+Gems in the group production were not installed.
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle install
+Using rake (10.0.4) 
+Using i18n (0.6.1) 
+Using multi_json (1.7.3) 
+Using activesupport (3.2.13) 
+Using builder (3.0.4) 
+Using activemodel (3.2.13) 
+Using erubis (2.7.0) 
+Using journey (1.0.4) 
+Using rack (1.4.5) 
+Using rack-cache (1.2) 
+Using rack-test (0.6.2) 
+Using hike (1.2.2) 
+Using tilt (1.4.1) 
+Using sprockets (2.2.2) 
+Using actionpack (3.2.13) 
+Using mime-types (1.23) 
+Using polyglot (0.3.3) 
+Using treetop (1.4.12) 
+Using mail (2.5.4) 
+Using actionmailer (3.2.13) 
+Using arel (3.0.2) 
+Using tzinfo (0.3.37) 
+Using activerecord (3.2.13) 
+Using activeresource (3.2.13) 
+Using nokogiri (1.5.9) 
+Using ffi (1.8.1) 
+Using childprocess (0.3.6) 
+Using rubyzip (0.9.9) 
+Using websocket (1.0.7) 
+Using selenium-webdriver (2.32.1) 
+Using xpath (0.1.4) 
+Using capybara (1.1.2) 
+Using coderay (1.0.9) 
+Using coffee-script-source (1.6.2) 
+Using execjs (1.4.0) 
+Using coffee-script (2.2.0) 
+Using rack-ssl (1.3.3) 
+Using json (1.8.0) 
+Using rdoc (3.12.2) 
+Using thor (0.18.1) 
+Using railties (3.2.13) 
+Using coffee-rails (3.2.2) 
+Using formatador (0.2.4) 
+Using growl (1.0.3) 
+Using listen (0.7.3) 
+Using lumberjack (1.0.3) 
+Using method_source (0.8.1) 
+Using slop (3.4.5) 
+Using pry (0.9.12.2) 
+Using guard (1.7.0) 
+Using spork (0.9.2) 
+Using sys-proctable (0.9.3) 
+Using guard-spork (1.2.0) 
+Using jquery-rails (2.0.2) 
+Using bundler (1.3.5) 
+Using rails (3.2.13) 
+Using rb-fsevent (0.9.1) 
+Using sass (3.2.9) 
+Using sass-rails (3.2.5) 
+Using uglifier (1.2.3) 
+Your bundle is complete!
+Gems in the group production were not installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec spork --bootstrap
+Using RSpec
+Bootstrapping /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/spec_helper.rb.
+Done. Edit /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/spec_helper.rb now with your favorite text editor and follow the instructions.
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ time bundle exec rspec spec/requests/static_pages_spec.rb
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429@global/gems/bundler-1.3.5/lib/bundler/rubygems_integration.rb:214:in `block in replace_gem': rspec-core is not part of the bundle. Add it to Gemfile. (Gem::LoadError)
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/rspec:18:in `<main>'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `eval'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `<main>'
+
+real	0m0.640s
+user	0m0.542s
+sys	0m0.054s
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec spork
+Using RSpec
+Preloading Rails environment
+Loading Spork.prefork block...
+cannot load such file -- rspec/rails (LoadError)
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `block in require'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/spec_helper.rb:13:in `block in <top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork.rb:24:in `prefork'
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/spec_helper.rb:6:in `<top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:138:in `block (2 levels) in preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/app_framework/rails.rb:8:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:134:in `block in preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork.rb:62:in `exec_prefork'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:120:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/run_strategy/forking.rb:25:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/runner.rb:74:in `run'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/runner.rb:10:in `run'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/bin/spork:10:in `<top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/spork:19:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/spork:19:in `<main>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `<main>'
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ time bundle exec rspec spec/requests/static_pages_spec.rb --drb
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429@global/gems/bundler-1.3.5/lib/bundler/rubygems_integration.rb:214:in `block in replace_gem': rspec-core is not part of the bundle. Add it to Gemfile. (Gem::LoadError)
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/rspec:18:in `<main>'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `eval'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `<main>'
+
+real	0m0.557s
+user	0m0.503s
+sys	0m0.051s
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec spork
+Using RSpec
+Preloading Rails environment
+Loading Spork.prefork block...
+cannot load such file -- rspec/rails (LoadError)
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `block in require'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/spec_helper.rb:13:in `block in <top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork.rb:24:in `prefork'
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/spec_helper.rb:6:in `<top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:138:in `block (2 levels) in preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/app_framework/rails.rb:8:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:134:in `block in preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork.rb:62:in `exec_prefork'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:120:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/run_strategy/forking.rb:25:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/runner.rb:74:in `run'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/runner.rb:10:in `run'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/bin/spork:10:in `<top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/spork:19:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/spork:19:in `<main>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `<main>'
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec spork
+Using RSpec
+Preloading Rails environment
+Loading Spork.prefork block...
+cannot load such file -- rspec/rails (LoadError)
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `block in require'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/spec_helper.rb:13:in `block in <top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork.rb:24:in `prefork'
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/spec_helper.rb:6:in `<top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:138:in `block (2 levels) in preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/app_framework/rails.rb:8:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:134:in `block in preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork.rb:62:in `exec_prefork'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:120:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/run_strategy/forking.rb:25:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/runner.rb:74:in `run'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/runner.rb:10:in `run'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/bin/spork:10:in `<top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/spork:19:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/spork:19:in `<main>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `<main>'
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec guard init spork
+22:19:30 - INFO - spork guard added to Guardfile, feel free to edit it
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec guard
+22:20:14 - ERROR - Could not load 'guard/rspec' or find class Guard::Rspec
+22:20:14 - ERROR - cannot load such file -- guard/rspec
+22:20:14 - ERROR - Invalid Guardfile, original error is:
+> [#] undefined method `new' for nil:NilClass
+22:20:14 - INFO - Guard uses TerminalTitle to send notifications.
+22:20:14 - INFO - Starting Spork for RSpec
+Using RSpec
+Preloading Rails environment
+Loading Spork.prefork block...
+cannot load such file -- rspec/rails (LoadError)
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `block in require'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/spec_helper.rb:13:in `block in <top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork.rb:24:in `prefork'
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/spec_helper.rb:6:in `<top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:138:in `block (2 levels) in preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/app_framework/rails.rb:8:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:134:in `block in preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork.rb:62:in `exec_prefork'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:120:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/run_strategy/forking.rb:25:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/runner.rb:74:in `run'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/runner.rb:10:in `run'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/bin/spork:10:in `<top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/spork:19:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/spork:19:in `<main>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `<main>'
+22:20:44 - ERROR - Could not start Spork server for RSpec after 30 seconds. I will continue waiting for a further 60 seconds.
+
+22:21:44 - ERROR - Could not start Spork server for RSpec. Make sure you can use it manually first.
+
+22:21:44 - INFO - Guard is now watching at '/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple'
+[1] guard(main)> 22:27:45 - INFO - Guard uses TerminalTitle to send notifications.
+22:27:45 - INFO - Guardfile has been re-evaluated.
+
+22:27:45 - INFO - Starting Spork for RSpec
+Using RSpec
+Preloading Rails environment
+Loading Spork.prefork block...
+cannot load such file -- rspec/rails (LoadError)
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `block in require'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/spec_helper.rb:13:in `block in <top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork.rb:24:in `prefork'
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/spec_helper.rb:6:in `<top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:138:in `block (2 levels) in preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/app_framework/rails.rb:8:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:134:in `block in preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork.rb:62:in `exec_prefork'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:120:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/run_strategy/forking.rb:25:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/runner.rb:74:in `run'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/runner.rb:10:in `run'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/bin/spork:10:in `<top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/spork:19:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/spork:19:in `<main>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `<main>'
+22:28:15 - ERROR - Could not start Spork server for RSpec after 30 seconds. I will continue waiting for a further 60 seconds.
+
+[1] guard(main)> exit
+22:28:20 - INFO - Bye bye...
+^[[A^[^[^[^[exit
+22:29:16 - ERROR - Could not start Spork server for RSpec. Make sure you can use it manually first.
+22:29:16 - INFO - Starting Spork for RSpec
+Using RSpec
+Preloading Rails environment
+Loading Spork.prefork block...
+cannot load such file -- rspec/rails (LoadError)
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `block in require'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:251:in `require'
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/spec_helper.rb:13:in `block in <top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork.rb:24:in `prefork'
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/spec_helper.rb:6:in `<top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `block in load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:236:in `load_dependency'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:245:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:138:in `block (2 levels) in preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/app_framework/rails.rb:8:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:134:in `block in preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork.rb:62:in `exec_prefork'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/test_framework.rb:120:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/run_strategy/forking.rb:25:in `preload'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/runner.rb:74:in `run'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/lib/spork/runner.rb:10:in `run'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/spork-0.9.2/bin/spork:10:in `<top (required)>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/spork:19:in `load'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/spork:19:in `<main>'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `<main>'
+22:29:46 - ERROR - Could not start Spork server for RSpec after 30 seconds. I will continue waiting for a further 60 seconds.
+22:30:46 - ERROR - Could not start Spork server for RSpec. Make sure you can use it manually first.
+exit 
+end
+finish
+:Q
+:q!
+

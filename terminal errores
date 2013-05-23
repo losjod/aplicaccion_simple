@@ -1,0 +1,966 @@
+Last login: Tue May 21 13:44:55 on ttys000
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ dubl .
+-bash: dubl: command not found
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ subl .
+-bash: subl: command not found
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ nim .
+-bash: nim: command not found
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ vim .
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+F
+
+Failures:
+
+  1) paginasestaticas Pagina Principal Debe tener el contenido 'paginasestaticas'
+     Failure/Error: page.should have_content('paginasestaticas')
+       expected there to be content "paginasestaticas" in "\n\n  AplicaccionSimple\n  \n  \n  \n\n\n\nPaginasestaticas\n\n  Esta es la pagina principal de la\n   Ruby en Tutorial Rails \n  aplicacion de muestra\n\n\n\n\n\n"
+     # ./spec/requests/paginasestaticas_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+Finished in 0.30521 seconds
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:6 # paginasestaticas Pagina Principal Debe tener el contenido 'paginasestaticas'
+
+Randomized with seed 20252
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+F
+
+Failures:
+
+  1) paginasestaticas Pagina Principal Debe tener el contenido 'paginasestaticas'
+     Failure/Error: page.should have_content('aplicaccion_simple')
+       expected there to be content "aplicaccion_simple" in "\n\n  AplicaccionSimple\n  \n  \n  \n\n\n\nPaginasestaticas\n\n  Esta es la pagina principal de la\n   Ruby en Tutorial Rails \n  aplicacion de muestra\n\n\n\n\n\n"
+     # ./spec/requests/paginasestaticas_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+Finished in 0.17762 seconds
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:6 # paginasestaticas Pagina Principal Debe tener el contenido 'paginasestaticas'
+
+Randomized with seed 49001
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails -v
+Rails 3.2.13
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+F
+
+Failures:
+
+  1) paginasestaticas Pagina Principal Debe tener el contenido 'paginasestaticas'
+     Failure/Error: page.should have_content('aplicaccion_simple')
+       expected there to be content "aplicaccion_simple" in "\n\n  AplicaccionSimple\n  \n  \n  \n\n\n\nStaticPages#help\nFind me in app/views/static_pages/help.html.erb\n\n\n"
+     # ./spec/requests/paginasestaticas_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+Finished in 0.18253 seconds
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:6 # paginasestaticas Pagina Principal Debe tener el contenido 'paginasestaticas'
+
+Randomized with seed 43680
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+F
+
+Failures:
+
+  1) paginasestaticas Pagina Principal Debe tener el contenido 'paginasestaticas'
+     Failure/Error: page.should have_content('paginasestaticas')
+       expected there to be content "paginasestaticas" in "\n\n  AplicaccionSimple\n  \n  \n  \n\n\n\nStaticPages#help\nFind me in app/views/static_pages/help.html.erb\n\n\n"
+     # ./spec/requests/paginasestaticas_spec.rb:8:in `block (3 levels) in <top (required)>'
+
+Finished in 0.17303 seconds
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:6 # paginasestaticas Pagina Principal Debe tener el contenido 'paginasestaticas'
+
+Randomized with seed 33250
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+.
+
+Finished in 0.1691 seconds
+1 example, 0 failures
+
+Randomized with seed 21361
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+.
+
+Finished in 0.17819 seconds
+1 example, 0 failures
+
+Randomized with seed 24159
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+..
+
+Finished in 0.19556 seconds
+2 examples, 0 failures
+
+Randomized with seed 60252
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `load': /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/requests/paginasestaticas_spec.rb:15: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n' (SyntaxError)
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/requests/paginasestaticas_spec.rb:21: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/requests/paginasestaticas_spec.rb:27: syntax error, unexpected keyword_end, expecting $end
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `block in load_spec_files'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `map'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `load_spec_files'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/command_line.rb:22:in `run'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/runner.rb:69:in `run'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/runner.rb:8:in `block in autorun'
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `load': /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/requests/paginasestaticas_spec.rb:17: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n' (SyntaxError)
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/requests/paginasestaticas_spec.rb:23: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/requests/paginasestaticas_spec.rb:29: syntax error, unexpected keyword_end, expecting $end
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `block in load_spec_files'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `map'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `load_spec_files'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/command_line.rb:22:in `run'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/runner.rb:69:in `run'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/runner.rb:8:in `block in autorun'
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `load': /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/requests/paginasestaticas_spec.rb:17: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n' (SyntaxError)
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/requests/paginasestaticas_spec.rb:23: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/requests/paginasestaticas_spec.rb:29: syntax error, unexpected keyword_end, expecting $end
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `block in load_spec_files'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `map'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `load_spec_files'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/command_line.rb:22:in `run'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/runner.rb:69:in `run'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/runner.rb:8:in `block in autorun'
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+.F.F.F
+
+Failures:
+
+  1) paginasestaticas Pagina Principal should have the title 'Home'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Ruby on Rails Tutorial Sample App | Home" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) paginasestaticas Help page should have the title 'Help'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Ruby on Rails Tutorial Sample App | Help" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+  3) paginasestaticas About page should have the title 'About Us'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Ruby on Rails Tutorial Sample App | About Us" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+Finished in 0.24849 seconds
+6 examples, 3 failures
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:12 # paginasestaticas Pagina Principal should have the title 'Home'
+rspec ./spec/requests/paginasestaticas_spec.rb:26 # paginasestaticas Help page should have the title 'Help'
+rspec ./spec/requests/paginasestaticas_spec.rb:40 # paginasestaticas About page should have the title 'About Us'
+
+Randomized with seed 47833
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+F.F.F.
+
+Failures:
+
+  1) paginasestaticas Pagina Principal should have the title 'Inicio'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Ruby on Rails Tutorial Sample App | Home" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) paginasestaticas Pagina de Ayuda should have the title 'Ayuda'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Ruby on Rails Tutorial Sample App | Help" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+  3) paginasestaticas Sobre la Pagina should have the title 'About Us'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Ruby on Rails Tutorial Sample App | About Us" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+Finished in 0.20563 seconds
+6 examples, 3 failures
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:12 # paginasestaticas Pagina Principal should have the title 'Inicio'
+rspec ./spec/requests/paginasestaticas_spec.rb:26 # paginasestaticas Pagina de Ayuda should have the title 'Ayuda'
+rspec ./spec/requests/paginasestaticas_spec.rb:40 # paginasestaticas Sobre la Pagina should have the title 'About Us'
+
+Randomized with seed 54203
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+F.F.F.
+
+Failures:
+
+  1) paginasestaticas Pagina Principal should have the title 'Inicio'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Ruby on Rails Tutorial Sample App | Home" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) paginasestaticas Pagina de Ayuda should have the title 'Ayuda'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Ruby on Rails Tutorial Sample App | Help" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+  3) paginasestaticas Sobre la Pagina should have the title 'About Us'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Ruby on Rails Tutorial Sample App | About Us" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+Finished in 0.22134 seconds
+6 examples, 3 failures
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:12 # paginasestaticas Pagina Principal should have the title 'Inicio'
+rspec ./spec/requests/paginasestaticas_spec.rb:26 # paginasestaticas Pagina de Ayuda should have the title 'Ayuda'
+rspec ./spec/requests/paginasestaticas_spec.rb:40 # paginasestaticas Sobre la Pagina should have the title 'About Us'
+
+Randomized with seed 56603
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+.F.F.F
+
+Failures:
+
+  1) paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web  | Inicio" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) paginasestaticas Sobre la Pagina Deberia tener titulo 'About Us'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web | Sobre Nosotros" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+  3) paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web  | Ayuda" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+Finished in 0.20876 seconds
+6 examples, 3 failures
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:12 # paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+rspec ./spec/requests/paginasestaticas_spec.rb:40 # paginasestaticas Sobre la Pagina Deberia tener titulo 'About Us'
+rspec ./spec/requests/paginasestaticas_spec.rb:26 # paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+
+Randomized with seed 40550
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+F.F.F.
+
+Failures:
+
+  1) paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web  | Inicio" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web  | Ayuda" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+  3) paginasestaticas Sobre la Pagina Deberia tener titulo 'About Us'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web | Sobre Nosotros" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+Finished in 0.21318 seconds
+6 examples, 3 failures
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:12 # paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+rspec ./spec/requests/paginasestaticas_spec.rb:26 # paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+rspec ./spec/requests/paginasestaticas_spec.rb:40 # paginasestaticas Sobre la Pagina Deberia tener titulo 'About Us'
+
+Randomized with seed 28625
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+.F.F.F
+
+Failures:
+
+  1) paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web  | Inicio" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web  | Ayuda" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+  3) paginasestaticas Sobre la Pagina Deberia tener titulo 'About Us'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web | Sobre Nosotros" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+Finished in 0.20849 seconds
+6 examples, 3 failures
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:12 # paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+rspec ./spec/requests/paginasestaticas_spec.rb:26 # paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+rspec ./spec/requests/paginasestaticas_spec.rb:40 # paginasestaticas Sobre la Pagina Deberia tener titulo 'About Us'
+
+Randomized with seed 50645
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+.F.F.F
+
+Failures:
+
+  1) paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web  | Ayuda" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+  2) paginasestaticas Sobre la Pagina Deberia tener titulo 'About Us'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web | Sobre Nosotros" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+  3) paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web  | Inicio" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+Finished in 0.21242 seconds
+6 examples, 3 failures
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:26 # paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+rspec ./spec/requests/paginasestaticas_spec.rb:40 # paginasestaticas Sobre la Pagina Deberia tener titulo 'About Us'
+rspec ./spec/requests/paginasestaticas_spec.rb:12 # paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+
+Randomized with seed 56685
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+.F.F.F
+
+Failures:
+
+  1) paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web  | Inicio" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+     Failure/Error: page.should have_selector('title',
+       expected css "title" with text "Tecnologias Web  | Ayuda" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:28:in `block (3 levels) in <top (required)>'
+
+  3) paginasestaticas Sobre la Pagina Deberia tener titulo 'About Us'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web | Sobre Nosotros" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+Finished in 0.20706 seconds
+6 examples, 3 failures
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:12 # paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+rspec ./spec/requests/paginasestaticas_spec.rb:26 # paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+rspec ./spec/requests/paginasestaticas_spec.rb:40 # paginasestaticas Sobre la Pagina Deberia tener titulo 'About Us'
+
+Randomized with seed 57698
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+...F.F
+
+Failures:
+
+  1) paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web  | Inicio" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) paginasestaticas Sobre la Pagina Deberia tener titulo 'About Us'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web | Sobre Nosotros" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+Finished in 0.21564 seconds
+6 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:12 # paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+rspec ./spec/requests/paginasestaticas_spec.rb:40 # paginasestaticas Sobre la Pagina Deberia tener titulo 'About Us'
+
+Randomized with seed 56155
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+.F...F
+
+Failures:
+
+  1) paginasestaticas Sobre la Pagina Deberia tener titulo 'About Us'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web | Sobre Nosotros" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+  2) paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+     Failure/Error: page.should have_selector('titulo',
+       expected css "titulo" with text "Tecnologias Web  | Inicio" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+Finished in 0.20961 seconds
+6 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:40 # paginasestaticas Sobre la Pagina Deberia tener titulo 'About Us'
+rspec ./spec/requests/paginasestaticas_spec.rb:12 # paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+
+Randomized with seed 7491
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+F.....
+
+Failures:
+
+  1) paginasestaticas Sobre la Pagina Deberia tener titulo 'About Us'
+     Failure/Error: page.should have_selector('title',
+       expected css "title" with text "Tecnologias Web | Sobre Nosotros" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+Finished in 0.21135 seconds
+6 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:40 # paginasestaticas Sobre la Pagina Deberia tener titulo 'About Us'
+
+Randomized with seed 60715
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+.....F
+
+Failures:
+
+  1) paginasestaticas Sobre la Pagina Deberia tener titulo 'Sobre Nosotros'
+     Failure/Error: page.should have_selector('title',
+       expected css "title" with text "Tecnologias Web | Sobre Nosotros" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+Finished in 0.21477 seconds
+6 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:40 # paginasestaticas Sobre la Pagina Deberia tener titulo 'Sobre Nosotros'
+
+Randomized with seed 53500
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+......
+
+Finished in 0.21175 seconds
+6 examples, 0 failures
+
+Randomized with seed 43552
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+......
+
+Finished in 0.21412 seconds
+6 examples, 0 failures
+
+Randomized with seed 45768
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+.........
+
+Finished in 0.22128 seconds
+9 examples, 0 failures
+
+Randomized with seed 34070
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+.........
+
+Finished in 0.22816 seconds
+9 examples, 0 failures
+
+Randomized with seed 20151
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+..F......
+
+Failures:
+
+  1) paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+     Failure/Error: page.should have_selector('title',
+       expected css "title" with text "Tecnologias Web  | Inicio" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:20:in `block (3 levels) in <top (required)>'
+
+Finished in 0.60611 seconds
+9 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:18 # paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+
+Randomized with seed 32777
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+...F..F..
+
+Failures:
+
+  1) paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+     Failure/Error: page.should have_selector('title',
+       expected css "title" with text "Tecnologias Web  | Ayuda" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:39:in `block (3 levels) in <top (required)>'
+
+  2) paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+     Failure/Error: page.should have_selector('title',
+       expected css "title" with text "Tecnologias Web  | Inicio" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:20:in `block (3 levels) in <top (required)>'
+
+Finished in 0.58338 seconds
+9 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:37 # paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+rspec ./spec/requests/paginasestaticas_spec.rb:18 # paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+
+Randomized with seed 37974
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+..F..F...
+
+Failures:
+
+  1) paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+     Failure/Error: page.should have_selector('title',
+       expected css "title" with text "Tecnologias Web  | Inicio" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:20:in `block (3 levels) in <top (required)>'
+
+  2) paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+     Failure/Error: page.should have_selector('title',
+       expected css "title" with text "Tecnologias Web  | Ayuda" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:39:in `block (3 levels) in <top (required)>'
+
+Finished in 0.23372 seconds
+9 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:18 # paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+rspec ./spec/requests/paginasestaticas_spec.rb:37 # paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+
+Randomized with seed 25642
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+...F..F..
+
+Failures:
+
+  1) paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+     Failure/Error: page.should have_selector('title',
+       expected css "title" with text "Tecnologias Web  | Ayuda" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:39:in `block (3 levels) in <top (required)>'
+
+  2) paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+     Failure/Error: page.should have_selector('title',
+       expected css "title" with text "Tecnologias Web  | Inicio" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:20:in `block (3 levels) in <top (required)>'
+
+Finished in 0.28756 seconds
+9 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:37 # paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+rspec ./spec/requests/paginasestaticas_spec.rb:18 # paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+
+Randomized with seed 29833
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+/Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `load': /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/requests/paginasestaticas_spec.rb:40: syntax error, unexpected tASSOC, expecting keyword_end (SyntaxError)
+                                :text => "Tecnologias Web  | Ayuda")
+                                        ^
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/requests/paginasestaticas_spec.rb:40: syntax error, unexpected ')', expecting keyword_end
+/Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/spec/requests/paginasestaticas_spec.rb:63: syntax error, unexpected $end, expecting keyword_end
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `block in load_spec_files'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `map'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/configuration.rb:780:in `load_spec_files'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/command_line.rb:22:in `run'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/runner.rb:69:in `run'
+	from /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/rspec-core-2.11.1/lib/rspec/core/runner.rb:8:in `block in autorun'
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+..F.....
+
+Failures:
+
+  1) paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+     Failure/Error: page.should have_selector('title',
+       expected css "title" with text "Tecnologias Web  | Inicio" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:20:in `block (3 levels) in <top (required)>'
+
+Finished in 0.20838 seconds
+8 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:18 # paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+
+Randomized with seed 13069
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails s
+=> Booting WEBrick
+=> Rails 3.2.13 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2013-05-21 20:39:06] INFO  WEBrick 1.3.1
+[2013-05-21 20:39:06] INFO  ruby 1.9.3 (2013-05-15) [x86_64-darwin12.2.0]
+[2013-05-21 20:39:06] INFO  WEBrick::HTTPServer#start: pid=12045 port=3000
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-21 20:39:35 -0600
+Served asset /rails.png - 200 OK (68ms)
+
+
+Started GET "/ayuda" for 127.0.0.1 at 2013-05-21 20:39:44 -0600
+
+ActionController::RoutingError (No route matches [GET] "/ayuda"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/RicValdez/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/RicValdez/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/RicValdez/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.6ms)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2013-05-21 20:39:50 -0600
+
+ActionController::RoutingError (No route matches [GET] "/inicio"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/RicValdez/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/RicValdez/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/RicValdez/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/RicValdez/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/paginasestaticas/inicio" for 127.0.0.1 at 2013-05-21 20:40:09 -0600
+Processing by PaginasestaticasController#inicio as HTML
+  Rendered paginasestaticas/inicio.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 118ms (Views: 118.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-21 20:40:09 -0600
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-21 20:40:09 -0600
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/paginasestaticas.js?body=1" for 127.0.0.1 at 2013-05-21 20:40:09 -0600
+Served asset /paginasestaticas.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-21 20:40:09 -0600
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/assets/paginasestaticas.css?body=1" for 127.0.0.1 at 2013-05-21 20:40:09 -0600
+Served asset /paginasestaticas.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-21 20:40:09 -0600
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/paginasestaticas/sobre" for 127.0.0.1 at 2013-05-21 20:40:15 -0600
+Processing by PaginasestaticasController#sobre as HTML
+  Rendered paginasestaticas/sobre.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paginasestaticas/ayuda" for 127.0.0.1 at 2013-05-21 20:40:20 -0600
+Processing by PaginasestaticasController#ayuda as HTML
+  Rendered paginasestaticas/ayuda.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paginasestaticas/sobre" for 127.0.0.1 at 2013-05-21 20:40:26 -0600
+Processing by PaginasestaticasController#sobre as HTML
+  Rendered paginasestaticas/sobre.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+[2013-05-21 20:40:26] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/paginasestaticas/ayuda" for 127.0.0.1 at 2013-05-21 20:40:35 -0600
+Processing by PaginasestaticasController#ayuda as HTML
+  Rendered paginasestaticas/ayuda.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+[2013-05-21 20:40:35] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/paginasestaticas/inicio" for 127.0.0.1 at 2013-05-21 20:40:39 -0600
+Processing by PaginasestaticasController#inicio as HTML
+  Rendered paginasestaticas/inicio.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+[2013-05-21 20:40:39] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-05-21 20:41:22] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-21 20:41:22 -0600
+Served asset /rails.png - 304 Not Modified (0ms)
+[2013-05-21 20:41:22] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+[2013-05-21 20:41:22] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/paginasestaticas/inicio" for 127.0.0.1 at 2013-05-21 20:41:29 -0600
+Processing by PaginasestaticasController#inicio as HTML
+  Rendered paginasestaticas/inicio.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-21 20:41:29 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+[2013-05-21 20:41:29] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-21 20:41:29 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+[2013-05-21 20:41:29] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/paginasestaticas.css?body=1" for 127.0.0.1 at 2013-05-21 20:41:29 -0600
+Served asset /paginasestaticas.css - 304 Not Modified (0ms)
+[2013-05-21 20:41:29] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/paginasestaticas.js?body=1" for 127.0.0.1 at 2013-05-21 20:41:29 -0600
+Served asset /paginasestaticas.js - 304 Not Modified (0ms)
+[2013-05-21 20:41:29] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-21 20:41:29 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+[2013-05-21 20:41:29] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-21 20:41:29 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+[2013-05-21 20:41:29] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+^C[2013-05-21 20:41:34] INFO  going to shutdown ...
+[2013-05-21 20:41:34] INFO  WEBrick::HTTPServer#start done.
+Exiting
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+......
+
+Finished in 0.2187 seconds
+6 examples, 0 failures
+
+Randomized with seed 16638
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+..F..F..
+
+Failures:
+
+  1) paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+     Failure/Error: page.should have_selector('title',
+       expected css "title" with text "Tecnologias Web  | Ayuda" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:39:in `block (3 levels) in <top (required)>'
+
+  2) paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+     Failure/Error: page.should have_selector('title',
+       expected css "title" with text "Tecnologias Web  | Inicio" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:20:in `block (3 levels) in <top (required)>'
+
+Finished in 0.21551 seconds
+8 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:37 # paginasestaticas Pagina de Ayuda Deberia tener titulo 'Ayuda'
+rspec ./spec/requests/paginasestaticas_spec.rb:18 # paginasestaticas Pagina Principal Deberia tener titulo 'Inicio'
+
+Randomized with seed 41329
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+......F
+
+Failures:
+
+  1) paginasestaticas Contacto  Debe tener contacto 'Contacto'
+     Failure/Error: page.should have_selector('h1', :text => 'Contacto')
+       expected css "h1" with text "Contacto" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:69:in `block (3 levels) in <top (required)>'
+
+Finished in 0.22751 seconds
+7 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:67 # paginasestaticas Contacto  Debe tener contacto 'Contacto'
+
+Randomized with seed 43353
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails generate controller paginasestaticas  contcato --no-test-framework
+    conflict  app/controllers/paginasestaticas_controller.rb
+Overwrite /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/app/controllers/paginasestaticas_controller.rb? (enter "h" for help) [Ynaqdh] h
+Y - yes, overwrite
+n - no, do not overwrite
+a - all, overwrite this and all others
+q - quit, abort
+d - diff, show the differences between the old and the new
+h - help, show this help
+Overwrite /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/app/controllers/paginasestaticas_controller.rb? (enter "h" for help) [Ynaqdh] d
+  class PaginasestaticasController < ApplicationController
+-   def inicio
++   def contcato
+- 
+-   end
+- 
+-   def ayuda
+- 
+-   end
+- 
+-   def sobre
+    end
+  end
+Retrying...
+Overwrite /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/app/controllers/paginasestaticas_controller.rb? (enter "h" for help) [Ynaqdh] q
+Aborting...
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+F......
+
+Failures:
+
+  1) paginasestaticas Contacto  Debe tener contacto 'Contacto'
+     Failure/Error: page.should have_selector('h1', :text => 'Contacto')
+       expected css "h1" with text "Contacto" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:69:in `block (3 levels) in <top (required)>'
+
+Finished in 0.20957 seconds
+7 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:67 # paginasestaticas Contacto  Debe tener contacto 'Contacto'
+
+Randomized with seed 45781
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ rails generate controller paginasestaticas  contacto --no-test-framework
+    conflict  app/controllers/paginasestaticas_controller.rb
+Overwrite /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/app/controllers/paginasestaticas_controller.rb? (enter "h" for help) [Ynaqdh] h
+Y - yes, overwrite
+n - no, do not overwrite
+a - all, overwrite this and all others
+q - quit, abort
+d - diff, show the differences between the old and the new
+h - help, show this help
+Overwrite /Users/RicValdez/Desktop/Web/proyectos_rails/aplicaccion_simple/app/controllers/paginasestaticas_controller.rb? (enter "h" for help) [Ynaqdh] n
+        skip  app/controllers/paginasestaticas_controller.rb
+       route  get "paginasestaticas/contacto"
+      invoke  erb
+       exist    app/views/paginasestaticas
+      create    app/views/paginasestaticas/contacto.html.erb
+      invoke  helper
+   identical    app/helpers/paginasestaticas_helper.rb
+      invoke  assets
+      invoke    coffee
+   identical      app/assets/javascripts/paginasestaticas.js.coffee
+      invoke    scss
+   identical      app/assets/stylesheets/paginasestaticas.css.scss
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+......F
+
+Failures:
+
+  1) paginasestaticas Contacto  Debe tener contacto 'Contacto'
+     Failure/Error: page.should have_selector('h1', :text => 'Contacto')
+       expected css "h1" with text "Contacto" to return something
+     # ./spec/requests/paginasestaticas_spec.rb:69:in `block (3 levels) in <top (required)>'
+
+Finished in 0.22643 seconds
+7 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/paginasestaticas_spec.rb:67 # paginasestaticas Contacto  Debe tener contacto 'Contacto'
+
+Randomized with seed 27602
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+.......
+
+Finished in 0.22382 seconds
+7 examples, 0 failures
+
+Randomized with seed 17418
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ bundle exec rspec spec/requests/paginasestaticas_spec.rb
+........
+
+Finished in 0.22701 seconds
+8 examples, 0 failures
+
+Randomized with seed 56302
+
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ mkdir spec/routing
+MacBook-Pro-de-Joel:aplicaccion_simple RicValdez$ 

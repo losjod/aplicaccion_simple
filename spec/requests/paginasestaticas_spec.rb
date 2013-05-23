@@ -5,6 +5,7 @@ describe "paginasestaticas" do
 
 
   describe "Pagina Principal" do
+
     it "Debe tener el contenido 'paginasestaticas'" do
       visit '/paginasestaticas/inicio'
       page.should have_content('Aplicacion Simple')
@@ -15,11 +16,19 @@ describe "paginasestaticas" do
       page.should have_selector('h1', :text => 'Aplicacion Simple')
     end
 
-    #it "Deberia tener titulo 'Inicio'" do
-     # visit '/paginasestaticas/inicio'
-      #page.should have_selector('title',
-       #                        :text => "Tecnologias Web  | Inicio")
-    #end
+    it "Debe tener titulo 'Inicio'" do
+      visit '/paginasestaticas/inicio'
+      page.should have_selector('title',
+                               :text => "Tecnologias Web ")
+   end
+
+    it "No debe tener titulo especifico Inicio" do
+      visit '/paginasestaticas/inicio'
+      page.should_not have_selector('title',
+                                    :text => ' Inicio')
+    end
+
+
   end
 
   describe "Pagina de Ayuda" do
@@ -60,4 +69,21 @@ describe "paginasestaticas" do
      #                           :text => "Tecnologias Web | Sobre Nosotros")
     #end
   end
+
+
+  describe "Contacto " do
+
+   it "Debe tener contacto 'Contacto'" do
+     visit '/paginasestaticas/contacto'
+     page.should have_selector('h1', :text => 'Contacto')
+
+   end
+
+   it "Debe tener el contenido 'Contacto'" do
+     visit '/paginasestaticas/contacto'
+     page.should have_content('Contacto')
+   end
+
+  end
+
 end
