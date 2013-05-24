@@ -1,11 +1,32 @@
 AplicaccionSimple::Application.routes.draw do
-  get "paginasestaticas/contacto"
 
-  get "paginasestaticas/inicio"
+  get "usuarios/new"
 
-  get "paginasestaticas/ayuda"
+  # You can have the root of your site routed with "root"
+  # just remember to delete public/index.html.
+  # root :to => "welcome#index"
 
-  get "paginasestaticas/sobre"
+
+  #get "paginasestaticas/inicio"
+  #match '/', to: 'static_pages#home'
+  root to: 'paginasestaticas#inicio'
+
+  #Se puede tener la raíz de su sitio transfieran en "root"
+  # recuerde eliminar pública / index.html.
+  # root: to => "welcome # index"
+
+  #  #get "paginasestaticas/contacto"
+  match '/contacto', to: 'paginasestaticas#contacto'
+  #get "paginasestaticas/ayuda"
+  match '/ayuda',    to: 'paginasestaticas#ayuda'
+  #get "paginasestaticas/sobre"
+  match '/sobre',   to: 'paginasestaticas#sobre'
+
+  match '/iniciosesion',  to: 'usuarios#new'
+
+
+
+
   #get "paginasestaticas/home"
 
   #get "paginasestaticas/help"

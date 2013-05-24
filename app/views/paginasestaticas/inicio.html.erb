@@ -1,9 +1,18 @@
-<!---< % provide(:title, 'Inicio') %>      ---->
 
-<h1>Aplicacion Simple</h1>
-<p>
+
+<% provide(:title, 'Inicio') %>
+<div class="center hero-unit">
+  <h1>Bienvenido a la Aplicacion Simple</h1>
+
+
+<h2>
   Esta es la Pagina Principal
   <a href="http://railstutorial.org/">Tutorial Ruby con Rails </a>
   aplicacion de muestra
-</p>
+</h2>
 
+ <!-- <a href="#" class="btn btn-large btn-primary">Registrate ahora!</a>        -->
+  <%= link_to "Registrate ahora!", iniciosesion_path, class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
