@@ -1,14 +1,13 @@
 require 'spec_helper'
 
-describe "PaginasUsuarios" do
+describe "Paginas Estaticas" do
 
   subject { page }
 
-  describe "inicio sesion" do
+  describe "signup page" do
+    before { visit signup_path }
 
-    before { visit iniciosesion_patch}
-    it { should have_selector('h1',    text: 'Inicio Sesion') }
-    it { should have_selector('title', text: full_title('Inicio Sesion')) }
-    end
+    it { should have_selector('h1',    text: 'Sign up') }
+    it { should have_selector('title', text: full_title('Sign up')) }
   end
-
+end

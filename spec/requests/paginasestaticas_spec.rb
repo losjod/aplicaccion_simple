@@ -4,15 +4,21 @@ describe "paginasestaticas" do
 
   subject { page }
 
+  shared_examples_for "all static pages" do
+    it { should have_selector('h1',    text: heading) }
+    it { should have_selector('title', text: full_title(page_title)) }
+  end
+
   describe "Pagina Principal" do
 
 
     before { visit root_path }
 
-    it { should have_selector('h1', text: 'Aplicaccion Simple') }
-    it { should have_selector( 'title', text: full_title('Inicio') ) }
+    let(:heading)    { 'Aplicacion Simple' }
+    let(:page_title) { '' }
+    #it_should_behave_like "all static pages"
     #text: "Tecnologias Web" }
-    it { should_not have_selector 'title', text: ' Inicio' }
+    it { should_not have_selector 'title', text: 'Inicio' }
    # it "Debe tener el contenido 'paginasestaticas'" do
       #visit '/paginasestaticas/inicio'
     #  visit  root_path
@@ -44,8 +50,11 @@ describe "paginasestaticas" do
   describe "Pagina de Ayuda" do
     before { visit ayuda_path }
 
-    it { should have_selector('h1', text: 'Ayuda') }
-    it { should have_selector 'title', text: full_title('Ayuda') }
+
+    let(:heading)    { 'Ayuda' }
+    let(:page_title) { '' }
+    #it { should have_selector('h1', text: 'Ayuda') }
+    #it { should have_selector 'title', text: full_title('Ayuda') }
     #text: "Tecnologias Web" }
     #it { should_not have_selector 'title', text: ' Ayuda' }
 
@@ -71,8 +80,10 @@ describe "paginasestaticas" do
   describe "Sobre la Pagina" do
     before { visit sobre_path }
 
-    it { should have_selector('h1', text: 'Sobre Nosotros') }
-    it { should have_selector 'title', text: full_title('Sobre Nosotros') }
+    let(:heading)    { 'Sobre Nosotros' }
+    let(:page_title) { '' }
+    #it { should have_selector('h1', text: 'Sobre Nosotros') }
+    #it { should have_selector 'title', text: full_title('Sobre Nosotros') }
     #text: "Tecnologias Web" }
     #it { should_not have_selector 'title', text: ' SobreNosotros' }
 
@@ -101,8 +112,11 @@ describe "paginasestaticas" do
   describe "Contacto " do
     before { visit contacto_path }
 
-    it { should have_selector('h1', text: 'Contacto') }
-    it { should have_selector 'title', text: full_title('Contacto') }
+    let(:heading)    { 'Contacto' }
+    let(:page_title) { '' }
+
+    #it { should have_selector('h1', text: 'Contacto') }
+    #it { should have_selector 'title', text: full_title('Contacto') }
     #text: "Tecnologias Web" }
     #it { should_not have_selector 'title', text: ' Contacto' }
   # it "Debe tener contacto 'Contacto'" do
@@ -123,8 +137,25 @@ describe "paginasestaticas" do
      #page.should have_selector('title',
       #                         text: "Tecnologias Web |")
    #end
+    end
 
-  end
 
-  end
 
+ # it "should have the right links on the layout" do
+  #  visit root_path
+   # click_link "Sobre"
+    #page.should have_selector 'title', text: full_title('Sobre Nosotros')
+#    click_link "Ayuda"
+ #   page.should # fill in
+  #  click_link "Contacto"
+   # page.should # fill in
+    #click_link "Inicio"
+#    click_link "Registrate Ahora!"
+ #   page.should # fill in
+  #  click_link "Aplicacion Simple"
+   # page.should # fill in
+  #end
+
+
+
+end
