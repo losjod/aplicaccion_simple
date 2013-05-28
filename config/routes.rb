@@ -2,6 +2,7 @@ AplicaccionSimple::Application.routes.draw do
 
   resources :users
 
+  resources :sessions, only: [:new, :create, :destroy]
   #get "users/new"
 
   #get "usuarios/new"
@@ -27,9 +28,11 @@ AplicaccionSimple::Application.routes.draw do
   #get "paginasestaticas/sobre"
   match '/sobre',   to: 'paginasestaticas#sobre'
 
-  match '/iniciosesion',  to: 'usuarios#new'
+  #match '/iniciosesion',  to: 'usuarios#new'
 
   match '/signup',  to: 'users#new',            via: 'get'
+  match '/signin',  to: 'sessions#new',         via: 'get'
+  match '/signout', to: 'sessions#destroy',     via: 'delete'
 
   #get "paginasestaticas/home"
 

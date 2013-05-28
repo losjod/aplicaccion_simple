@@ -25,6 +25,9 @@ group :development, :test do
 
 end
 
+
+#gem 'jquery-turbolinks'
+
 group :development do
   gem 'annotate', '2.5.0'
 end
@@ -46,7 +49,9 @@ group :test do
   gem 'capybara', '1.1.2'
   gem 'rb-fsevent', '0.9.1', :require => false
   gem 'growl', '1.0.3'
-  gem 'factory_girl_rails', '4.2.1'
+  gem 'factory_girl_rails', '4.1.0'
+  gem 'cucumber-rails', '1.2.1', :require => false
+  gem 'database_cleaner', '0.7.0'
 end
 
 group :production do
