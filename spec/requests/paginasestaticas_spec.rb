@@ -43,25 +43,25 @@ describe "paginasestaticas" do
     end
   end
 
+  #it "Deberia tener h1 'Aplicacion Simple'" do
+  #visit '/paginasestaticas/inicio'
+  # visit  root_path
+  #page.should have_selector('h1', :text => 'Aplicacion Simple')
+  #end
 
-    #it "Deberia tener h1 'Aplicacion Simple'" do
-      #visit '/paginasestaticas/inicio'
-     # visit  root_path
-      #page.should have_selector('h1', :text => 'Aplicacion Simple')
-    #end
+  #it "Debe tener titulo 'Inicio'" do
+  #visit '/paginasestaticas/inicio'
+  # visit  root_path
+  #page.should have_selector('title',
+  #                        :text => "Tecnologias Web ")
+  #end
 
-    #it "Debe tener titulo 'Inicio'" do
-      #visit '/paginasestaticas/inicio'
-     # visit  root_path
-      #page.should have_selector('title',
-       #                        :text => "Tecnologias Web ")
-   #end
+  #it "No debe tener titulo especifico Inicio" do
+  # visit '/paginasestaticas/inicio'
+  #page.should_not have_selector('title',
+  #                             :text => ' Inicio')
+  #end
 
-    #it "No debe tener titulo especifico Inicio" do
-     # visit '/paginasestaticas/inicio'
-      #page.should_not have_selector('title',
-       #                             :text => ' Inicio')
-    #end
 
 
   end
